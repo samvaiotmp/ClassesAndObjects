@@ -5,7 +5,7 @@
 
 int main()
 {
-    Person p1;
-    Person p2;
+    Person p1("Kate","Gregory",123);
+    Person p2("Someone","else",456);
     return 0;
 }

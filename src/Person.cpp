@@ -1,4 +1,6 @@
-//
-// Created by warne on 6/6/2017.
-//
+#include "Person.h"
 
+Person::Person(std::string first, std::string last, int arbitrary) : firstname(first), lastname(last), arbitrarynumber(arbitrary)
+{
+
+}
