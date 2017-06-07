@@ -1,6 +1,15 @@
 #include "Person.h"
+#include <iostream>
 
-Person::Person(std::string first, std::string last, int arbitrary) : firstname(first), lastname(last), arbitrarynumber(arbitrary)
+using namespace std;
+
+Person::Person(string first, string last, int arbitrary) : firstname(first), lastname(last), arbitrarynumber(arbitrary)
 {
+    cout << "constructing " << firstname << " " << lastname << endl;
 
+}
+
+Person::~Person()
+{
+    cout << "destructing " << firstname << " " << lastname << endl;
 }
