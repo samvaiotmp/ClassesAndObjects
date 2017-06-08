@@ -5,11 +5,31 @@ using namespace std;
 
 Person::Person(string first, string last, int arbitrary) : firstname(first), lastname(last), arbitrarynumber(arbitrary)
 {
-    cout << "constructing " << firstname << " " << lastname << endl;
+    cout << "constructing " << GetName() << endl;
 
 }
 
 Person::~Person()
 {
-    cout << "destructing " << firstname << " " << lastname << endl;
+    cout << "destructing " << GetName() << endl;
+}
+
+string Person::GetName()
+{
+    return firstname + " " + lastname;
+}
+
+bool Person::operator<(Person &p)
+{
+    return arbitrarynumber < p.arbitrarynumber;
+}
+
+bool Person::operator<(int i)
+{
+    return arbitrarynumber < i;
+}
+
+bool operator<(int i, Person& p)
+{
+    return i < p.GetNumber();
 }

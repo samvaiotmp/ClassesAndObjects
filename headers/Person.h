@@ -10,5 +10,11 @@ private:
 public:
     Person(std::string first,std::string last,int arbitrary);
     ~Person();
+    std::string GetName();
+    int GetNumber() {return arbitrarynumber;}
+    void SetNumber(int number) {arbitrarynumber = number;}
+    bool operator<(Person& p);
+    bool operator<(int i);
+    friend bool operator<(int i, Person& p); //friend allows function to access private variable inside it
 };
 #endif
