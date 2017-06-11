@@ -9,7 +9,7 @@ private:
     int arbitrarynumber;
 public:
     Person(std::string first,std::string last,int arbitrary);
-    ~Person();
+    virtual ~Person();
     virtual std::string GetName() const;
     int GetNumber() {return arbitrarynumber;}
     void SetNumber(int number) {arbitrarynumber = number;}
