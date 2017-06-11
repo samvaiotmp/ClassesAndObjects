@@ -10,7 +10,7 @@ private:
 public:
     Person(std::string first,std::string last,int arbitrary);
     ~Person();
-    std::string GetName();
+    virtual std::string GetName() const;
     int GetNumber() {return arbitrarynumber;}
     void SetNumber(int number) {arbitrarynumber = number;}
     bool operator<(Person& p);

@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int main()
+int main2()
 {
     Person p1("Kate","Gregory",123);
     Person p2("Someone", "Else", 456);
