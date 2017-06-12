@@ -3,5 +3,5 @@ project(ClassesAndObjects)
 
 set(CMAKE_CXX_STANDARD 11)
 include_directories(headers)
-set(SOURCE_FILES main.cpp src/Person.cpp headers/Person.h src/Tweeter.cpp headers/Tweeter.h src/status.cpp headers/status.h src/PointersAndInheritence.cpp)
+set(SOURCE_FILES main.cpp src/Person.cpp headers/Person.h src/Tweeter.cpp headers/Tweeter.h src/status.cpp headers/status.h src/PointersAndInheritence.cpp src/Casting.cpp src/Resource.cpp headers/Resource.h)
 add_executable(ClassesAndObjects ${SOURCE_FILES})

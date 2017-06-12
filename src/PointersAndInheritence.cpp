@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main()
+int main3()
 {
     Person* Kate = new Person("Kate", "Gregory", 456);
     Tweeter* KateGregcons = new Tweeter("Kate","Gregory",567,"@Gregor");
